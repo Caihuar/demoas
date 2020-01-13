@@ -24,7 +24,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.news.utils.MyDatabaseHelper;
-import com.example.news.utils.NewsInfoDao;
 import com.example.news.utils.ThemeUtil;
 
 
@@ -42,7 +41,6 @@ public class ShowNewsActivity extends AppCompatActivity implements View.OnClickL
     private String pageDescription="";
     private String video;
     private Context context;
-    private NewsInfoDao mNewsInfoDao;
     private MyDatabaseHelper helper;
 
     @Override
@@ -52,7 +50,6 @@ public class ShowNewsActivity extends AppCompatActivity implements View.OnClickL
         ThemeUtil.setBaseTheme(this);
         setContentView(R.layout.activity_show_news);
         show_news =(WebView) findViewById(R.id.show_news);
-        mNewsInfoDao = new NewsInfoDao();
         helper = new MyDatabaseHelper(this, "TaiDB.db", null, 1);
 //        data = getIntent();
 //        share_url = data.getStringExtra("share_url");

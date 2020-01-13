@@ -30,7 +30,6 @@ import com.example.news.model.NewsInfo;
 import com.example.news.model.NewsVo;
 import com.example.news.utils.GsonUtil;
 import com.example.news.utils.MyDatabaseHelper;
-import com.example.news.utils.NewsInfoDao;
 import com.example.news.utils.ThemeUtil;
 
 import java.util.ArrayList;
@@ -41,7 +40,7 @@ public class CollectionActivity  extends AppCompatActivity implements NewsAdapte
     private ListView collection;
     private Context context;
     private int type;
-    private NewsInfoDao mNewsInfoDao;
+
     private TextView tm;
     private TextView docid;
     private List<NewsInfo> newsList = new ArrayList<>();
